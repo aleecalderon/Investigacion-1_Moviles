@@ -48,32 +48,59 @@
         android:orientation="horizontal"
         android:gravity="center">
 
-        <Button
-            android:id="@+id/btn_start"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:text="Iniciar"
-            android:backgroundTint="#2ECC71" /> <Button
-        android:id="@+id/btn_pause"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:text="Pausar"
-        android:backgroundTint="#F1C40F"
-        android:textColor="#000000" /> <Button
-        android:id="@+id/btn_resume"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:text="Reanudar"
-        android:backgroundTint="#3498DB" /> <Button
-        android:id="@+id/btn_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:text="Reiniciar"
-        android:backgroundTint="#95A5A6" /> </LinearLayout>
+            android:orientation="vertical">
+
+            <!-- Primera fila -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_start"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:text="Iniciar"
+                    android:backgroundTint="#2ECC71"/>
+
+                <Button
+                    android:id="@+id/btn_pause"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:text="Pausar"
+                    android:textColor="#000000"
+                    android:backgroundTint="#F1C40F"/>
+
+                <Button
+                    android:id="@+id/btn_resume"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:text="Reanudar"
+                    android:backgroundTint="#3498DB"/>
+
+            </LinearLayout>
+
+            <!-- Segunda fila -->
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Reiniciar temporizador"
+                android:textStyle="bold"
+                android:backgroundTint="#95A5A6"/>
+
+        </LinearLayout> </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -152,6 +179,8 @@
         android:textColor="#2C3E50"
         android:layout_marginBottom="8dp"/>
 
+
+
     <TextView
         android:id="@+id/text_empty_history"
         android:layout_width="match_parent"
@@ -160,6 +189,14 @@
         android:textColor="#95A5A6"
         android:gravity="center"
         android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_clear_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpiar historial"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#E74C3C"/>
 
     <LinearLayout
         android:id="@+id/container_history"
