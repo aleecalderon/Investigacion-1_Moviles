@@ -115,6 +115,6 @@ Las tareas permanecen almacenadas utilizando **SharedPreferences**, permitiendo 
 
 **Desarrollo de Aplicaciones Móviles**
 
-Universidad de El Salvador
+Universidad Don Bosco
 
 2026
